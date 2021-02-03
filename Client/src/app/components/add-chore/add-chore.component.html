@@ -1,0 +1,34 @@
+<div class="addChoresSection">
+
+    <h1 class="addChoreHeader">Add a chore to the family management system</h1>
+
+    <form #choreForm="ngForm" [formGroup]="choreValues" class="inputsSection">
+        <p>Description:</p>
+
+        <mat-form-field>
+            <input [formControl]="descriptionInputField" matInput name="descriptionInputField" type="text" class="descriptionInput" required>
+            
+            <mat-error *ngIf="descriptionInputField.errors?.required">
+                Description is <strong>required</strong>
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Family Member</mat-label>
+            <mat-select disableRipple [formControl]="familyMemberField" required>
+              <mat-option *ngFor="let familyMember of allFamilyMembers" [value]="familyMember.name">{{familyMember.name}}</mat-option>
+            </mat-select>
+
+            <mat-error *ngIf="familyMemberField.errors?.required">
+                Family Member is <strong>required</strong>
+            </mat-error>
+        </mat-form-field>
+    </form>
+
+    <button (click)="onAddChoreClick()" class="addChoreButton">Add Chore</button>
+
+
+    <div class="backHomeSection">
+        <button routerLink="/home" class="backHomeButton">Back home</button>
+    </div>
+</div>

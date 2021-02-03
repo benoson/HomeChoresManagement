@@ -1,0 +1,54 @@
+.chores-table, .addChoresSection {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+.chores-table td, .chores-table th {
+    padding: 8px;
+}
+
+.chores-table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.chores-table tr {
+    transition: 0.3s ease;
+}
+
+.chores-table tr:hover {
+    background-color: #ddd;
+}
+
+.chores-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.addChoresButton {
+    background: none;
+    border: 1px solid lightseagreen;
+    padding: 3px 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    border-radius: 3px;
+    width: 50%;
+    display: block;
+    margin: 3rem auto auto auto;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.addChoresButton:hover {
+    background: lightseagreen;
+    color: white;
+}
+
+h1 {
+    padding: 2rem;
+}

@@ -1,0 +1,64 @@
+.addChoresSection {
+    width: 80%;
+    margin: 2rem auto auto auto;
+    border: 1px solid lightseagreen;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 3rem;
+}
+
+.backHomeButton {
+    background: none;
+    border: 1px solid lightseagreen;
+    padding: 3px 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    border-radius: 3px;
+    width: 50%;
+    display: block;
+    margin: 3rem auto auto auto;
+    transition: 0.3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+.addChoreButton {
+    background: none;
+    border: 1px solid lightseagreen;
+    padding: 3px 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    border-radius: 3px;
+    width: 35%;
+    display: block;
+    margin: 2rem auto auto auto;
+    transition: 0.3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+.backHomeButton:hover, .addChoreButton:hover {
+    background: lightseagreen;
+    color: white;
+}
+
+.inputsSection {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.descriptionInput, .familyMemberInput {
+    width: 100%;
+    display: block;
+    margin: auto auto 2rem auto;
+    outline: none;
+    padding: 5px 3px;
+}
+
+.addChoreHeader {
+    background: lightseagreen;
+    color: white;
+    padding: 1rem;
+}
